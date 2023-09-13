@@ -10,7 +10,7 @@ Follow the guide below. If you have any questions, don't hesitate to contact me 
 
 
 1. Restart a MySQL server
-- Before starting a MySQL server, update the buffer pool size to 10% (then, 20%, 30%, 40%, 50%) of your TPC-C database size. For example, if you load 20 warehouses (e.g., about 2G database size), change the value of innodb_buffer_pool_size in my.cnf to 200M:
+- Before starting a MySQL server, update the buffer pool size to 10% (then,30%, 50%) of your TPC-C database size. For example, if you load 20 warehouses (e.g., about 2G database size), change the value of innodb_buffer_pool_size in my.cnf to 200M:
 ```bash
 $ vi /path/to/my.cnf
 ...
