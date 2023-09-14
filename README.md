@@ -79,6 +79,7 @@ or
 $ sudo killall mysqld
 ```
 
+5. For the report submission, please refer to the [link](https://github.com/kyongs/mysql57-buffer-pool-experiment.md/blob/main/submission-guide.md).
 ## Reference
 - https://www.percona.com/blog/tpcc-mysql-simple-usage-steps-and-how-to-build-graphs-with-gnuplot/
 - https://github.com/Percona-Lab/tpcc-mysql
