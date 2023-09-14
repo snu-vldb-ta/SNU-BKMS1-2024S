@@ -172,7 +172,7 @@ $ sudo killall mysqld
 
 
 
-7. For the report submission, please refer to the [link](https://github.com/kyongs/mysql57-buffer-pool-experiment.md/blob/main/submission-guide.md). <br/>
+7. Execute the expriments with buffer pool size of 10%, 30% and 50%. For the report submission, please refer to the [link](https://github.com/kyongs/mysql57-buffer-pool-experiment.md/blob/main/submission-guide.md). <br/>
 
 
 
