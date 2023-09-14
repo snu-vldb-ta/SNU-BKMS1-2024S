@@ -15,3 +15,4 @@
 
  4. **No libreadline7 package**: Install "libreadline-dev"
 
+5. **openssl error**: The version of openssl should be 1.x.x
