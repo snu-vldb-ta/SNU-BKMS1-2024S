@@ -39,6 +39,7 @@ Make sure that you submit your own individual work.
     - Reference; if necessary (참고 문헌)
 - Submit a PDF file with the following file name: `{Student ID}-{Name}-{week#}.pdf` (e.g., `2023000000-이경식-week2.pdf`)
 - Only `.pdf` formats should be submitted
+- The buffer pool size must be 10%, 30%, 50%
 
 ## Due date
 
