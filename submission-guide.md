@@ -39,7 +39,7 @@ Make sure that you submit your own individual work.
       > The analysis should contain the correlation between performance metrics(i.e., hit ratio, TpmC) and buffer pool size. 
     - Reference; if necessary (참고 문헌)
 - Submit a PDF file with the following file name: `{Student ID}-{Name}.pdf` (e.g., `2023000000-이경식.pdf`)
-- Only `.pdf` formats should be submitted
+- Only `.pdf` formats should be submitted. A report should be around 1-2 pages.
 - The buffer pool size must be 10%, 30%, 50%
 
 ## Due date
