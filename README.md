@@ -88,7 +88,6 @@ I/O sum[0]:cur[0], unzip sum[0]:cur[0]
 4. After the benchmark ends, shut down the MySQL server:
 ```bash
 $ ./bin/mysqladmin -uroot -pyourPassword shutdown
-or
 $ sudo killall mysqld
 ```
 
