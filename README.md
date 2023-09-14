@@ -23,8 +23,12 @@ innodb_buffer_pool_size=200M
 
 - (Optional) Also, if you have a backup test directory, overwrite it to the existing test directory.
 ```bash
-$ rm -rf /home/vldb/test-data/*
-$ cp -r /home/vldb/backup/test-data/* /home/vldb/test-data
+$ rm -rf /path/to/data-dir/*
+$ cp -r /path/to/data-dir-backup/* /path/to/data-dir
+
+# Ex)
+# $ rm -rf /home/vldb/test-data/*
+# $ cp -r /home/vldb/test-data-backup/* /home/vldb/test-data
 ```
 
 - Start a MySQL server:
