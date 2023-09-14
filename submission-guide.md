@@ -2,7 +2,7 @@
 
 Make sure that you submit your own individual work.<br/>
 
-Due Date: 2023.09.17 (Sunday) PM 11:59
+**Due Date**: 2023.09.17 (Sunday) PM 11:59
 
 ## Formatting
 
@@ -42,7 +42,7 @@ Due Date: 2023.09.17 (Sunday) PM 11:59
     - Reference; if necessary (참고 문헌)
 - Submit a PDF file with the following file name: `{Student ID}-{Name}.pdf` (e.g., `2023000000-이경식.pdf`)
 - Only `.pdf` formats should be submitted. A report should be around 1-2 pages.
-- The buffer pool size must be 10%, 30%, 50%
+- The buffer pool size must be 10%, 30%, 50%.
 
 ## Due date
 
