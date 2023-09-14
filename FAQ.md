@@ -16,3 +16,7 @@
  4. **No libreadline7 package**: Install "libreadline-dev"
 
 5. **openssl error**: The version of openssl should be 1.x.x
+
+6. **CMake Errors**: Please check if `1. you installed the prerequisite packages completely`, and `2. you have a sufficient capacity`.
+
+7. **We recommend you to use sufficient disk/memory capacity for the virtual machine. (i.e, disk: 20 GB, memory: Minimum 4 GB ).**
