@@ -1,6 +1,8 @@
 # Lab Report Submission
 
-Make sure that you submit your own individual work.
+Make sure that you submit your own individual work.<br/>
+
+Due Date: 2023.09.17 (Sunday) PM 11:59
 
 ## Formatting
 
