@@ -46,6 +46,7 @@ $ ./tpcc_start -h 127.0.0.1 -S /tmp/mysql.sock -d tpcc -u root -p "yourPassword"
 3. Monitor the buffer hit/miss ratio of MySQL
 - While running the benchmark, collect performance metrics (e.g., I/O status, transaction throughput, hit/miss ratio) and record them in a separate file for future analysis. Refer to the [performance monitoring guide](https://github.com/kyongs/MySQL-TPCC-Installation/blob/main/4_performance_analysis.md).
 - Also, regarding hit ratio, this is a way to monitor buffer hit rate.
+- You should monitor the hit ratio while MySQL server is **running**.
 ```bash
 $ ./bin/mysql -uroot -pyourPassword
 Welcome to the MySQL monitor.  Commands end with ; or \g.Your MySQL connection id is 8Server version: 8.0.15 Source distribution
@@ -86,7 +87,10 @@ I/O sum[0]:cur[0], unzip sum[0]:cur[0]
 - In the example above, ``buffer pool hit rate = 0.986``
 
 
-4. When the benchmark ends, note the `TpmC` value. It is the metric for evaluating TPC-C performance.
+4. **(Optional)** While running TPC-C benchmark, you can also monitor the I/O status by `iostat` command. [link](https://github.com/kyongs/MySQL-TPCC-Installation/blob/main/4_performance_analysis.md)
+  
+
+5. When the benchmark ends, note the `TpmC` value. It is the metric for evaluating TPC-C performance.
 
 ```bash
 ***************************************
@@ -156,14 +160,21 @@ STOPPING THREADS........
                  67461.500 TpmC
 ```
 
-5. After the benchmark ends, shut down the MySQL server:
+
+
+6. After the benchmark ends, shut down the MySQL server:
    
 ```bash
 $ ./bin/mysqladmin -uroot -pyourPassword shutdown
 $ sudo killall mysqld
 ```
 
-5. For the report submission, please refer to the [link](https://github.com/kyongs/mysql57-buffer-pool-experiment.md/blob/main/submission-guide.md). <br/>
+
+
+
+7. For the report submission, please refer to the [link](https://github.com/kyongs/mysql57-buffer-pool-experiment.md/blob/main/submission-guide.md). <br/>
+
+
 
 
 
