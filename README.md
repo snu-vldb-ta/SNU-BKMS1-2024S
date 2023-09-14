@@ -5,6 +5,9 @@ In this experiment, you will learn to measure the hit/miss ratio in MySQL while 
 
 Follow the guide below. If you have any questions, don't hesitate to contact me via email (kyongshikl@gmail.com)
 
+## Prerequisite
+- You should install Ubuntu, MySQL, and tpcc-mysql before you start this experiment.
+- Refer to the [link](https://github.com/kyongs/MySQL-TPCC-Installation).
 
 ## Instructions
 
