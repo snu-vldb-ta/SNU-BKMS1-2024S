@@ -86,7 +86,78 @@ I/O sum[0]:cur[0], unzip sum[0]:cur[0]
 - In the example above, ``buffer pool hit rate = 0.986``
 
 
-4. After the benchmark ends, shut down the MySQL server:
+4. When the benchmark ends, note the `TpmC` value. It is the metric for evaluating TPC-C performance.
+
+```bash
+***************************************
+*** ###easy### TPC-C Load Generator ***
+***************************************
+option h with value '127.0.0.1'
+option S (socket) with value '/tmp/mysql.sock'
+option d with value 'tpcc'
+option u with value 'root'
+option p with value 'yourPassword'
+option w with value '20'
+option c with value '8'
+option r with value '10'
+option l with value '1200'
+<Parameters>
+     [server]: 127.0.0.1
+     [port]: 3306
+     [DBname]: tpcc
+       [user]: root
+       [pass]: 1234
+  [warehouse]: 20
+ [connection]: 8
+     [rampup]: 10 (sec.)
+    [measure]: 1200 (sec.)
+
+RAMP-UP TIME.(10 sec.)
+
+MEASURING START.
+
+10, trx: 11204, 95%: 5.681, 99%: 6.864, max_rt: 17.443, 11206|15.114, 1121|1.739, 1120|17.696, 1120|20.223
+20, trx: 11173, 95%: 5.588, 99%: 6.494, max_rt: 13.516, 11169|6.150, 1117|0.965, 1117|17.845, 1118|18.300
+30, trx: 11335, 95%: 5.475, 99%: 6.095, max_rt: 10.298, 11338|8.255, 1133|0.937, 1134|16.660, 1133|17.742
+...
+1200, trx: 11080, 95%: 5.632, 99%: 6.517, max_rt: 10.721, 11082|8.663, 1109|2.241, 1108|18.519, 1107|18.890
+
+STOPPING THREADS........
+
+<Raw Results>
+  [0] sc:1125874 lt:223356  rt:0  fl:0 avg_rt: 3.9 (5)
+  [1] sc:1347068 lt:2142  rt:0  fl:0 avg_rt: 1.0 (5)
+  [2] sc:134924 lt:0  rt:0  fl:0 avg_rt: 0.5 (5)
+  [3] sc:134923 lt:0  rt:0  fl:0 avg_rt: 10.5 (80)
+  [4] sc:134890 lt:32  rt:0  fl:0 avg_rt: 12.5 (20)
+ in 1200 sec.
+
+<Raw Results2(sum ver.)>
+  [0] sc:1125875  lt:223356  rt:0  fl:0
+  [1] sc:1347090  lt:2142  rt:0  fl:0
+  [2] sc:134924  lt:0  rt:0  fl:0
+  [3] sc:134923  lt:0  rt:0  fl:0
+  [4] sc:134890  lt:32  rt:0  fl:0
+
+<Constraint Check> (all must be [OK])
+ [transaction percentage]
+        Payment: 43.48% (>=43.0%) [OK]
+   Order-Status: 4.35% (>= 4.0%) [OK]
+       Delivery: 4.35% (>= 4.0%) [OK]
+    Stock-Level: 4.35% (>= 4.0%) [OK]
+ [response time (at least 90% passed)]
+      New-Order: 83.45%  [NG] *
+        Payment: 99.84%  [OK]
+   Order-Status: 100.00%  [OK]
+       Delivery: 100.00%  [OK]
+    Stock-Level: 99.98%  [OK]
+
+<TpmC>
+                 67461.500 TpmC
+```
+
+5. After the benchmark ends, shut down the MySQL server:
+   
 ```bash
 $ ./bin/mysqladmin -uroot -pyourPassword shutdown
 $ sudo killall mysqld
