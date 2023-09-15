@@ -2,7 +2,8 @@
 
 Make sure that you submit your own individual work.<br/>
 
-**Due Date**: 2023.09.17 (Sunday) PM 11:59
+**Due Date**: 2023.09.17 (Sunday) PM 11:59 <br/>
+**Where to submit**: ETL "Practice 1 Report" (과제란의 "Practice 1 Report" 에 pdf로 제출바랍니다. 
 
 ## Formatting
 
