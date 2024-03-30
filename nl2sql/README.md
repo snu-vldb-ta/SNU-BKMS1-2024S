@@ -104,7 +104,7 @@ You are required to submit two files (`BKMS1-A1-report.pdf`, `BKMS1-A1-answer.xl
 
 ```
 ### Complete Postgres SQL query only and with no explanation.
-### SQLite SQL tables, with their properties:
+### Postgres SQL tables, with their properties:
 # [Schema]
 # frpm(CDSCode, Academic Year, County Code, District Code, School Code, County Name, District Name)
 # schools(CDSCode, StatusType, County, District, School, Street, StreetAbr, City, Zip, State, MailStreet, MailStrAbr)
