@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <stdexcept>
 
 #include "record/schema.hpp"
 

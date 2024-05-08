@@ -17,7 +17,7 @@ chunk_scan::chunk_scan(transaction *pTx, const std::string &pFileName,
 void chunk_scan::before_first() { move_to_block(mStartBNum); }
 
 void chunk_scan::close() {
-  for (int i = 0; i < mBuffs.size(); i++) {
+  for (size_t i = 0; i < mBuffs.size(); i++) {
     block_id blk(mFileName, mStartBNum + i);
     mTx->unpin(blk);
   }

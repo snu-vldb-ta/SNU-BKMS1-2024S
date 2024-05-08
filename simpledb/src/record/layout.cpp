@@ -1,3 +1,5 @@
+#include <stdexcept>
+
 #include "record/layout.hpp"
 #include "file/page.hpp"
 

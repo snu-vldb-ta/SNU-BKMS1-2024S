@@ -56,7 +56,7 @@ sort_plan::split_into_runs(scan *pSrc) {
 std::vector<std::shared_ptr<temp_table>> sort_plan::do_a_merge_iteration(
     const std::vector<std::shared_ptr<temp_table>> &pRuns) {
   std::vector<std::shared_ptr<temp_table>> result;
-  for (int i = 0; i + 2 <= pRuns.size(); i += 2) {
+  for (size_t i = 0; i + 2 <= pRuns.size(); i += 2) {
     auto p1 = pRuns[i];
     auto p2 = pRuns[i + 1];
     result.emplace_back(merge_two_runs(p1.get(), p2.get()));
