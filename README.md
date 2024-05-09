@@ -8,7 +8,7 @@
 | --- | ---- | --- | --- | --- | 
 | 1 | Oracle | [Oracle Live SQL Scripts](./oracle/README.md) | | 2024.03.13 |
 | 2 | Postgres | [Assignment 1](./nl2sql/README.md) | NL2SQL | 2024.03.28 |
-| 3 | SimpleDB | [Assignment 2](./simpledb/) | SimpleDB Code | 2024.03.28 |
+| 3 | SimpleDB | [Assignment 2](./simpledb/) | SimpleDB Code | 2024.05.09 |
 
 
 ## Contact
