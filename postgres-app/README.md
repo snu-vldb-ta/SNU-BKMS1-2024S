@@ -33,6 +33,25 @@ These features may include, but are not limited to:
 
 ### 4. Code Structure
 - All user scenarios and features should be coded in one file. (e.g., `main.py`, `app.js`)
+  - The main code, which includes all user scenarios and features, should be implemented in a single file.
+  - This file should import and execute the backend application code.
+  - Ensure that the backend logic is separated but can be seamlessly integrated and executed from the main file.
+  - The backend code may have multiple files.
+  - For example:
+  - ```
+    main.py
+    ├── application
+    │   ├── connection.py
+    │   ├── db.py
+    │   ├── user.py
+    │   └── ...
+    └── ...
+    inside main.py
+      scenario1() # add user, calling function from user.py
+      scenario2() # add table, calling function from db.py
+      scenario3() # disconnect, calling function from connection.py
+    ... 
+  
 - Include comments in your code to briefly explain the logic and functionality of each feature.
 - Provide readme.md file with detailed instructions on how to set up and run the application.
 - Print out logs or messages to demonstrate the execution of each feature.
